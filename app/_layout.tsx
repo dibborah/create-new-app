@@ -30,8 +30,10 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        {/* <Stack.Screen name="(tabs)" options={{ headerShown: false }} /> */}
-        <Stack.Screen name="index" options={
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        {/* <Stack.Screen name="(coffee)" options={{ headerShown: false }} /> */}
+
+        {/* <Stack.Screen name="index" options={
           {
             title: 'Home',
             headerShown: false
@@ -40,9 +42,8 @@ export default function RootLayout() {
         <Stack.Screen name="contact" options={
           {
             title: 'Contact Us',
-            // headerShown: false,
           }}
-        />
+        /> */}
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
